@@ -1,0 +1,11 @@
+.footer {
+	position: fixed;
+	bottom: 0px;
+  text-align: center;
+  width: 100%;
+  background-color: #FFF;
+}
+
+.footer-text {
+  color: #E17055 !important;
+}

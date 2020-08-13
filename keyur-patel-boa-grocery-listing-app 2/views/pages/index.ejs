@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="/css/base.css" />
+    <%- include('../partials/head'); %>
+	</head>
+	<body class="container">
+		<header>
+    	<%- include('../partials/header'); %>
+		</header>
+		<main>
+	    <div class="main-content">
+	    	<link rel="stylesheet" type="text/css" href="/css/body.css" />
+	    	<ul class="sku-list">
+	    		<% skus.forEach(function(sku) { %>
+        		<li class="sku">
+        			<div class="sku-quantity">QTY: <%= sku.qty %></div>
+        			<div class="sku-name"><%= sku.item %></div>
+        			<div class="sku-type"><%= sku.type %></div>
+        			<div class="sku-category"><%= sku.category %></div>
+    			<% }); %>
+	    	</ul>
+	    </div>
+		</main>
+		<footer>
+		  <%- include('../partials/footer'); %>
+		</footer>
+	</body>
+</html>

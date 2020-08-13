@@ -1,0 +1,57 @@
+.main-content {
+	margin: 100px 10px 50px;
+}
+
+.sku-list {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	display: flex;
+  flex-wrap: wrap;
+}
+
+.sku {
+	background-color: #FFF4D5;
+	margin: 1%;
+	width: 20%;
+	padding: 10px;
+	font-weight: bold !important;
+	border-width: 0px 3px 3px 0px;
+	border-color: #E17055;
+	border-style: solid;
+}
+
+.sku-quantity {
+	float: right;
+	color: #E17055 !important;
+}
+
+.sku-name {
+	font-size: 36px;
+	margin-top: 50px;
+	border-bottom: 2px solid #CCC;
+}
+
+.sku-type {
+	margin: 5px 0px;
+  height: 78px;
+}
+
+.sku-category {
+	text-transform: uppercase;
+	color: #E17055 !important;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media only screen and (min-width: 1025px) {
+  .main-content {
+		max-width: 980px;
+		margin: 100px auto 50px;
+	}
+}
+
+@media screen and (max-device-width: 767px), screen and (max-width: 767px) {
+  .sku {
+		width: 98%;
+	}
+}
